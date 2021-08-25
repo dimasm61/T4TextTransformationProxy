@@ -1,0 +1,8 @@
+﻿<#@ template language="C#" hostspecific="true" #>
+<#@ output extension=".cs" encoding="utf-8" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ assembly name="$(SolutionDir)\MyT4Assembly\bin\Debug\MyT4Assembly.dll"#>
+<#
+    MyT4Assembly.CodeGeneratorHelper.GenerateCode(this);
+#>
